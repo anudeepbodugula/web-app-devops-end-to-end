@@ -19,27 +19,27 @@ This project demonstrates the complete lifecycle of a Go web application, from c
 ## Getting Started
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/your-repo/go-web-app.git
-cd go-web-app
+1. Clone the repository
+    git clone https://github.com/your-repo/go-web-app.git
+    cd go-web-app
 
-# 2. Build the Docker Image
-docker build -t go-web-app:latest .
+2. Build the Docker Image
+    docker build -t go-web-app:latest .
 
-# 3. Deploy to Kubernetes using Helm
-helm install go-web-app ./helm
+3. Deploy to Kubernetes using Helm
+    helm install go-web-app ./helm
 
-# 4. Continuous Integration (CI) with GitHub Actions
-#    This project is set up with GitHub Actions for CI. The pipeline automatically:
-#    - Lints the Go code
-#    - Builds the Docker image
-#    - Runs tests
+4. Continuous Integration (CI) with GitHub Actions
+    This project is set up with GitHub Actions for CI. The pipeline automatically:
+    - Lints the Go code
+    - Builds the Docker image
+    - Runs tests
 
-# 5. Continuous Delivery (CD) with ArgoCD
-#    ArgoCD is used for GitOps-based CD. It watches the Git repository for changes
-#    and automatically deploys updates to the Kubernetes cluster.
+5. Continuous Delivery (CD) with ArgoCD
+    ArgoCD is used for GitOps-based CD. It watches the Git repository for changes
+    and automatically deploys updates to the Kubernetes cluster.
 
-#    To deploy with ArgoCD:
-#    1. Install ArgoCD in your Kubernetes cluster following the guide:
-#       https://argo-cd.readthedocs.io/en/stable/getting_started/
-#    2. Configure ArgoCD to watch the repository and sync the application.
+    To deploy with ArgoCD:
+    1. Install ArgoCD in your Kubernetes cluster following the guide:
+       https://argo-cd.readthedocs.io/en/stable/getting_started/
+    2. Configure ArgoCD to watch the repository and sync the application.x
